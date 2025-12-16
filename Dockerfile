@@ -6,9 +6,9 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y gcc default-libmysqlclient-dev pkg-config && \
 rm -rf /var/lib/apt/lists/* 
 
-COPY requirement.txt .
+COPY requirment.txt .
 
-RUN pip install --no-cache-dir -r requirement.txt
+RUN pip install --no-cache-dir -r requirment.txt
 
 COPY . .
 
